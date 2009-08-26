@@ -41,9 +41,16 @@ Sarah at Stuff by Sarah: http://www.stuffbysarah.net/
 @import url('../rolopress-core/styles/widgets.css');
 
 
-body {
-	margin: 1.5em 15%;
+
+body, html {
+	margin: 0;
+	padding:0;
 }
+
+#wrapper {
+	margin: 1.5em 15%;
+	clear: both;
+	}
 
 /* =Header
 -------------------------------------------------------------- */
@@ -63,20 +70,39 @@ body {
 .skip-link {
 	display: none;
 }
-.menu ul {
+	
+#searchform {
+    float:right;    
+	}
+
+#menu {
+	height: 36px;
+	background: black;
+	padding:5px 15px;
+	}
+	
+#menu ul {
 	list-style: none;
 	margin: 0;
 }
-.menu ul ul {
+#menu ul ul {
 	display: none;
 }
-.menu li {
+#menu li {
 	display: inline;
 }
-.menu a {
+#menu a {
 	display: block;
 	float: left;
 	padding:0 10px 0 0;
+}
+
+.menu_item {
+	line-height: 36px;
+}
+
+#menu .widget-title {
+    display: none;
 }
 
 
