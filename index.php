@@ -2,8 +2,8 @@
 	
 		<?php rolopress_before_container(); // Before container hook ?>
 		<div id="container">	
-			<?php rolopress_before_content(); // Before content hook ?>
-			<div id="content">
+			<?php rolopress_before_info(); // Before info hook ?>
+			<div id="info">
 			
 <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
 				<div id="nav-above" class="navigation">
@@ -56,8 +56,8 @@
 <?php } ?>			
 
 		
-			</div><!-- #content -->		
-			<?php rolopress_after_content(); // After content hook ?>
+			</div><!-- #info -->		
+			<?php rolopress_after_info(); // After info hook ?>
 		</div><!-- #container -->
 		<?php rolopress_after_container(); // After container hook ?>
 		
