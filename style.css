@@ -45,6 +45,7 @@ Sarah at Stuff by Sarah: http://www.stuffbysarah.net/
 body, html {
 	margin: 0;
 	padding:0;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
 }
 
 #wrapper {
@@ -52,11 +53,6 @@ body, html {
 	clear: both;
 	}
 	
-#container {
-	border: 4px solid #84A2AE;
-	padding: 5px;
-	}
-
 /* =Header
 -------------------------------------------------------------- */
 
@@ -76,13 +72,9 @@ body, html {
 	display: none;
 }
 	
-#searchform {
-    float:right;    
-	}
-
 #menu {
 	height: 36px;
-	background: black;
+	background: #464646;
 	padding:5px 15px;
 	}
 	
@@ -100,9 +92,13 @@ body, html {
 	display: block;
 	float: left;
 	padding:0 10px 0 0;
-	color:white;
+	color:#ccc;
+	text-decoration:none; 
 }
-
+#menu a:hover {
+	color:#FFFFFF;
+	text-decoration:underline;
+}
 .menu_item {
 	line-height: 36px;
 }
@@ -110,20 +106,23 @@ body, html {
 #menu .widget-title {
     display: none;
 }
+#app-title a{
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-size: 22px;
+	text-decoration: none;
+	color: white;
+}
 
 
 /* =main
 -------------------------------------------------------------- */
 
-.post {
-	border: 1px solid #84A2AE;
-	padding: 5px;
-	margin: 0 0 3em 0;	
-}
 .entry-main, .entry-summary {
 	margin: 1.5em 0 0 0;
 }
-
+.page, .post {
+	padding: 5px;
+}
 
 /* =Navigation
 -------------------------------------------------------------- */
@@ -143,7 +142,7 @@ body, html {
 }
 .widget-area ul ul {
 	list-style: disc;
-	margin-left: 1.1em;
+	margin:0.5em 0 1.1em 2.1em;
 }
 .widget-area ul ul ul {
 	margin-left: 2.5em;
@@ -152,23 +151,46 @@ body, html {
 	margin: 0 0 1.5em 0;
 }
 
-/* =Temporary styles until the
-		directory can read @import
-		
+
+#info,#primary li.widget,#secondary li.widget  {
+	border: 1px solid #DFDFDF;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;	
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+
+
+h3.section-title{
+background:#DFDFDF;
+text-shadow:0 1px 0 #FFFFFF;
+font-size:12px;
+font-weight:bold;
+line-height:1;
+margin:0;
+padding:7px 9px;
+}
+
+
+
+	
+/* =Alignment
+-------------------------------------------------------------- */	
 .aligncenter {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.alignleft {
+.alignleft, .alignleft li {
 	float: left;
 }
 
-.alignright {
+.alignright,.alignright li {
 	float: right;
 }
 		
--------------------------------------------------------------- */
+
 
 
