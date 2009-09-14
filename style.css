@@ -124,7 +124,7 @@ body, html {
 	padding: 5px;
 }
 #info,#primary li.widget,#secondary li.widget  {
-	border: 1px solid #DFDFDF;
+	border: 1px solid #E4F2FD;
 	-webkit-border-radius: 6px;
 	-khtml-border-radius: 6px;	
 	-moz-border-radius: 6px;
@@ -161,7 +161,7 @@ body, html {
 	margin-bottom:20px;
 }
 h3.section-title{
-background:#DFDFDF;
+background:#E4F2FD;
 text-shadow:0 1px 0 #FFFFFF;
 font-size:12px;
 font-weight:bold;
