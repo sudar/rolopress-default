@@ -1,215 +1,14 @@
-/*   
-Theme Name: RoloPress Default
-Theme URI: http://rolopress.com
-Description: A Contact Manager built on WordPress
-Author: <a href="http://slipfire.com/">SlipFire</a> &amp; <a href="http://www.sudarmuthu.com/">Sudar Muthu</a>
-Author URI: 
-Version: 0.1
-Tags: contact-manager, crm
-Template: rolopress-core
-
-
-RoloPress for WordPress is copyright SlipFire http://slipfire.com/  and Sudar Muthu http://www.sudarmuthu.com
-Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
-http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-RoloPress core theme is based on the Shape Theme by Ian Stewart http://themeshapes.com/shape/
-
-Special Thanks for their contributions to RoloPress (whether they know it or not)
-Sarah at Stuff by Sarah: http://www.stuffbysarah.net/
-
-*/
-
-
-/* Import a basic layout */
-@import url('../rolopress-core/styles/2c-r.css');
-
-/* Reset default browser styles */
-@import url('../rolopress-core/styles/reset.css');
-
-/* Rebuild default browser styles */
-@import url('../rolopress-core/styles/rebuild.css');
-
-/* Basic WordPress Styles */
-@import url('../rolopress-core/styles/wp.css');
-
-/* Styles for Widget Areas */
-@import url('../rolopress-core/styles/widgets.css');
-
-
-
-body, html {
-	margin: 0;
-	padding:0;
-	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
-}
-
-#wrapper {
-	margin: 1.5em 15%;
-	clear: both;
-	}
-	
-/* =Header
--------------------------------------------------------------- */
-
-#branding {
-	margin: 0 0 1.5em 0;
-}
-
-
-/* =Menu
--------------------------------------------------------------- */
-
-#access {
-	margin: 0 0 1.5em 0;
-	overflow: auto;
-}
-.skip-link {
-	display: none;
-}
-	
-#menu {
-	height: 36px;
-	background: #464646;
-	padding:5px 15px;
-	}
-	
-#menu ul {
-	list-style: none;
-	margin: 0;
-}
-#menu ul ul {
-	display: none;
-}
-#menu li {
-	display: inline;
-}
-#menu a {
-	display: block;
-	float: left;
-	padding:0 10px 0 0;
-	color:#ccc;
-	text-decoration:none; 
-}
-#menu a:hover {
-	color:#FFFFFF;
-	text-decoration:underline;
-}
-.menu_item {
-	line-height: 36px;
-}
-
-#menu .widget-title {
-    display: none;
-}
-#app-title a{
-	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
-	font-size: 22px;
-	text-decoration: none;
-	color: white;
-}
-
-
-/* =main
--------------------------------------------------------------- */
-
-.entry-main, .entry-summary {
-	margin: 1.5em 0 0 0;
-}
-#info .page, #info .post, .inside {
-	padding: 5px;
-}
-#info,#primary li.widget,#secondary li.widget  {
-	border: 4px solid #E4F2FD;
-	-webkit-border-radius: 6px;
-	-khtml-border-radius: 6px;	
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-}
-.post .entry-meta {
-text-align:right;
-font-size:0.9em;
-}
-
-.post-edit-link{
-font-size:10px;
-float:right;
-}
-
-
-/* =Navigation
--------------------------------------------------------------- */
-
-.navigation {
-	margin: 0 0 1.5em 0;
-	overflow: auto;	
-}
-
-
-/* =Widget Areas
--------------------------------------------------------------- */
-.widget-area ul {
-	list-style: none;
-	margin-left: 0;
-}
-.widget-area ul ul {
-	list-style: disc;
-	margin:0.3em 0 0.3em 1.5em;
-}
-.widget-area ul ul ul {
-	margin-left: 2em;
-}
-.widget-container {
-	margin: 0 0 1.5em 0;
-}
-#primary li.widget,#secondary li.widget  {
-	margin-bottom:20px;
-}
-h2.page-title{
-background:#E4F2FD;
-text-shadow:0 1px 0 #FFFFFF;
-font-size:16px;
-font-weight:bold;
-line-height:1;
-margin:0;
-padding:7px 9px;
-}
-h2.page-title a{
-text-decoration:none;
-}
-h3.section-title{
-background:#E4F2FD;
-text-shadow:0 1px 0 #FFFFFF;
-font-size:12px;
-font-weight:bold;
-line-height:1;
-margin:0;
-padding:7px 9px;
-}
-
-
-
-	
-/* =Alignment
--------------------------------------------------------------- */	
-.aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.alignleft, .alignleft li {
-	float: left;
-}
-
-.alignright,.alignright li {
-	float: right;
-}
-		
-
-
-
+/*   Theme Name: RoloPress DefaultTheme URI: http://rolopress.comDescription: A Contact Manager built on WordPressAuthor: <a href="http://slipfire.com/">SlipFire</a> &amp; <a href="http://www.sudarmuthu.com/">Sudar Muthu</a>Author URI: Version: 0.1Tags: contact-manager, crmTemplate: rolopress-core
+RoloPress for WordPress is copyright SlipFire http://slipfire.com/  and Sudar Muthu http://www.sudarmuthu.comLike WordPress, this work is released under GNU General Public License, version 2 (GPL).http://www.gnu.org/licenses/old-licenses/gpl-2.0.htmlThis program is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty ofMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.RoloPress core theme is based on the Shape Theme by Ian Stewart http://themeshapes.com/shape/
+Special Thanks for their contributions to RoloPress (whether they know it or not)Sarah at Stuff by Sarah: http://www.stuffbysarah.net/*/
+
+/* Import a basic layout */@import url('../rolopress-core/styles/2c-r.css');
+/* Reset default browser styles */@import url('../rolopress-core/styles/reset.css');/* Rebuild default browser styles */@import url('../rolopress-core/styles/rebuild.css');
+/* Basic WordPress Styles */@import url('../rolopress-core/styles/wp.css');
+/* Styles for Widget Areas */@import url('../rolopress-core/styles/widgets.css');
+body, html {	margin: 0;	padding:0;	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;}#wrapper {	margin: 1.5em 15%;	clear: both;}
+/* =Header-------------------------------------------------------------- */#branding {	margin: 0 0 1.5em 0;}
+/* =Menu-------------------------------------------------------------- */#access {	margin: 0 0 1.5em 0;	overflow: auto;}.skip-link {	display: none;}#menu {	height: 36px;	background: #464646;	padding:5px 15px;}#menu ul {	list-style: none;	margin: 0;}#menu ul ul {	display: none;}#menu li {	display: inline;}#menu a {	display: block;	float: left;	padding:0 10px 0 0;	color:#ccc;	text-decoration:none; }#menu a:hover {	color:#FFFFFF;	text-decoration:underline;}.menu_item {	line-height: 36px;}#menu .widget-title {    display: none;}#app-title a{	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;	font-size: 22px;	text-decoration: none;	color: white;}
+/* =main-------------------------------------------------------------- */.entry-main, .entry-summary {	margin: 1.5em 0 0 0;}#info .page, #info .post, .inside {	padding: 5px;}#info,#primary li.widget,#secondary li.widget  {	border: 4px solid #E4F2FD;	-webkit-border-radius: 6px;	-khtml-border-radius: 6px;		-moz-border-radius: 6px;	border-radius: 6px;}.post .entry-meta {text-align:right;font-size:0.9em;}.post-edit-link{font-size:10px !important;float:right;}
+/* =Navigation-------------------------------------------------------------- */.navigation {	margin: 0 0 1.5em 0;	overflow: auto;	}/* =Widget Areas-------------------------------------------------------------- */.widget-area ul {	list-style: none;	margin-left: 0;}.widget-area ul ul {	list-style: disc;	margin:0.3em 0 0.3em 1.5em;}.widget-area ul ul ul {	margin-left: 2em;}.widget-container {	margin: 0 0 1.5em 0;}#primary li.widget,#secondary li.widget  {	margin-bottom:20px;}h2.page-title, h3.section-title{background:#E4F2FD;text-shadow:0 1px 0 #FFFFFF;font-weight:bold;line-height:1;margin:0;padding:7px 4px;}h2.page-title, h2.page-title a{text-decoration:none;font-size:16px;}h3.section-title{font-size:12px;}
+/* =Alignment-------------------------------------------------------------- */	.aligncenter {	display: block;	margin-left: auto;	margin-right: auto;}.alignleft, .alignleft li {	float: left;}.alignright,.alignright li {	float: right;}
