@@ -171,6 +171,26 @@ font-size:10px !important;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
+.archive .post {
+    height: 80px;
+    padding:0 10px 0 0;
+}
+.archive .post .entry-meta {
+    display:none;
+}
+
+
+/* =Contact Info
+-------------------------------------------------------------- */
+.avatar {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.archive .entry-title {
+    clear: none;
+}
+
 
 /* =Widget Areas
 -------------------------------------------------------------- */
@@ -221,3 +241,48 @@ font-size:12px;
 .alignright,.alignright li {
 	float: right;
 }
+
+
+/* =Notes
+-------------------------------------------------------------- */	
+#notes{padding: 5px;}
+ol.notelist { list-style:none; margin:0; padding:0; clear:both; }
+ol.notelist li, #note { border:1px solid #d5d5d5; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; margin:0 0 10px; padding:5px 7px 5px 5px; position:relative; }
+ol.notelist li.pingback comment-author { padding:0 170px 0 0; }
+ol.notelist li div.vcard { font-size: 14px; line-height: 16px;}
+ol.notelist li div.vcard cite.fn { font-style:normal; font-weight:bold; }
+ol.notelist li div.vcard cite.fn a.url { color:#cc0000; text-decoration:none; }
+ol.notelist li div.vcard cite.fn a.url:hover { color:#000; }
+ol.notelist li div.vcard img.avatar { background: #fff; border:1px solid #aaa; padding: 5px; left:7px; position:absolute; top:7px; }
+ol.notelist li div.note-meta { font-size: 10px; line-height: 16px;text-align:right;}
+ol.notelist li div.note-meta a { color:#205B87; text-decoration:none; }
+ol.notelist li p { font-weight:normal; font-size: 12px; line-height: 16px; margin:5px 0 12px; }
+ol.notelist li ul { font-weight:normal; font-size: 12px; line-height: 16px; list-style:square; margin:0 0 12px; padding:0; }
+ol.notelist li ul.children { list-style:none; margin:12px 0 0; text-indent:0; }
+ol.notelist li ul.children li.depth-2 { margin:0 0 0 24px; }
+ol.notelist li ul.children li.depth-3 { margin:0 0 0 24px; }
+ol.notelist li ul.children li.depth-4 { margin:0 0 0 24px; }
+ol.notelist li ul.children li.depth-5 { margin:0 0 0 24px; }
+ol.notelist ul.children li.odd { background:#fff; }
+ol.notelist ul.children li.even { background:#f6f6f6; }
+ol.notelist li.pingback div.vcard { padding:0 170px 0 0; }
+#notes h3, #respond h3 {font-weight:bold;text-align:center;}
+#noteform {padding:5px;width:90%;}
+#note {width:100%;}
+
+
+ol.notelist li .attach span{
+}
+
+ol.notelist li .attach a  {
+background:#ffffff url('img/attach.png') no-repeat top right;
+}
+
+
+
+
+ol.notelist li .attach a:hover{
+border-color:#000000 #C0C0C0 #C0C0C0 #000000;
+text-decoration:none;
+}
+
