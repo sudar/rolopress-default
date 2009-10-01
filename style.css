@@ -270,19 +270,16 @@ ol.notelist li.pingback div.vcard { padding:0 170px 0 0; }
 #noteform {padding:5px;width:90%;}
 #note {width:100%;}
 
-
-ol.notelist li .attach span{
+ol.notelist li .attach {
+background:url(img/attach.png) no-repeat scroll right top;
+text-indent:-9999px;
+height:16px;
+width:16px;
+position:absolute;
 }
-
-ol.notelist li .attach a  {
-background:#ffffff url('img/attach.png') no-repeat top right;
-}
-
-
-
-
-ol.notelist li .attach a:hover{
-border-color:#000000 #C0C0C0 #C0C0C0 #000000;
-text-decoration:none;
+ol.notelist li .attach a {
+display:block;
+width:16px;
+height:16px;
 }
 
