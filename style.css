@@ -178,6 +178,10 @@ font-size:10px !important;
 .archive .post .entry-meta {
     display:none;
 }
+ul.item-list {
+list-style-type:none;
+margin:0;
+}
 
 
 /* =Contact Info
@@ -243,6 +247,20 @@ font-size:12px;
 }
 
 
+/* =Vcards
+-------------------------------------------------------------- */	
+ul.vcard, .vcard li, ul.group {
+margin-left:0;
+list-style:none;
+}
+.vcard .avatar {
+margin-right:5px;
+}
+.vcard .tel, .vcard .social, .vcard .adr, .vcard .website, .entry-utility {
+float:left;
+clear:both;
+}
+
 /* =Notes
 -------------------------------------------------------------- */	
 #notes{padding: 5px;}
@@ -281,5 +299,12 @@ ol.notelist li .attach a {
 display:block;
 width:16px;
 height:16px;
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */	
+.inlineLabels .multipleInput .phone, .inlineLabels .multipleInput .im {
+width:150px;
 }
 
