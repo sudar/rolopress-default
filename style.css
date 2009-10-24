@@ -172,10 +172,10 @@ font-size:10px !important;
 	border-radius: 3px;
 }
 .archive .post {
-    height: 80px;
+    height: auto;
     padding:0 10px 0 0;
 }
-.archive .post .entry-meta {
+.archive .post .entry-meta,.archive .post .entry-summary{
     display:none;
 }
 ul.item-list {
@@ -257,9 +257,17 @@ list-style:none;
 margin-right:5px;
 }
 .vcard .tel, .vcard .social, .vcard .adr, .vcard .website, .entry-utility {
-float:left;
 clear:both;
 }
+.vcard .fn, .vcard .title, .vcard .org {
+width:50%;
+float:left;
+}
+.type-contact .tag-links,.type-contact  .cat-links,.type-contact  .entry-utility .meta-sep {
+display:none;
+}
+.type-contact  .notes-link {
+float:right;
 
 /* =Notes
 -------------------------------------------------------------- */	
