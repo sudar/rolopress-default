@@ -1,6 +1,5 @@
 /*   
 Theme Name: RoloPress Default
-
 Theme URI: http://rolopress.com
 Description: A Contact Manager built on WordPress
 Author: <a href="http://slipfire.com/">SlipFire</a> &amp; <a href="http://www.sudarmuthu.com/">Sudar Muthu</a>
@@ -10,26 +9,22 @@ Tags: contact-manager, crm
 Template: rolopress-core
 
 
-RoloPress for WordPress is copyright SlipFire http://slipfire.com/  and Sudar Muthu http://www.sudarmuthu.com
+RoloPress Default theme is copyright SlipFire http://slipfire.com/ and Sudar Muthu http://www.sudarmuthu.com
 Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-RoloPress core theme is based on the Shape Theme by Ian Stewart http://themeshapes.com/shape/
-
-
-Special Thanks for their contributions to RoloPress (whether they know it or not)
-Sarah at Stuff by Sarah: http://www.stuffbysarah.net/
+RoloPress Core theme framework is based on 
+Shape Theme by Ian Stewart http://themeshapes.com/shape/ and
+Hybrid Theme by Justin Tadlock http://themehybrid.com 
 */
-
-
 
 
 /* Import a basic layout */
 @import url('../rolopress-core/styles/2c-r.css');
-
 
 /* Reset default browser styles */
 @import url('../rolopress-core/styles/reset.css');
@@ -37,10 +32,8 @@ Sarah at Stuff by Sarah: http://www.stuffbysarah.net/
 /* Rebuild default browser styles */
 @import url('../rolopress-core/styles/rebuild.css');
 
-
 /* Basic WordPress Styles */
 @import url('../rolopress-core/styles/wp.css');
-
 
 /* Styles for Widget Areas */
 @import url('../rolopress-core/styles/widgets.css');
@@ -58,7 +51,6 @@ body, html {
 	margin: 1.5em 15%;
 	clear: both;
 }
-
 a {
     text-decoration:none;
 }
@@ -66,14 +58,11 @@ a:hover {
     text-decoration:underline;
 }
 
-
 /* =Header
 -------------------------------------------------------------- */
 #branding {
 	margin: 0 0 1.5em 0;
 }
-
-
 
 /* =Menu
 -------------------------------------------------------------- */
@@ -123,7 +112,6 @@ a:hover {
 	color: white;
 }
 
-
 /* =main
 -------------------------------------------------------------- */
 .entry-main, .entry-summary {
@@ -140,19 +128,11 @@ a:hover {
 	border-radius: 6px;
 }
 .post .entry-meta {
-text-align:right;
-font-size:0.9em;
+	text-align:right;
+	font-size:0.9em;
 }
 .post-edit-link{
-font-size:10px !important;
-}
-
-
-/* =Navigation
--------------------------------------------------------------- */
-.navigation {
-	margin: 0 0 1.5em 0;
-	overflow: auto;	
+	font-size:10px !important;
 }
 
 /* =Archives
@@ -179,22 +159,9 @@ font-size:10px !important;
     display:none;
 }
 ul.item-list {
-list-style-type:none;
-margin:0;
+	list-style-type:none;
+	margin:0;
 }
-
-
-/* =Contact Info
--------------------------------------------------------------- */
-.avatar {
-    float: left;
-    padding: 0 10px 0 0;
-}
-
-.archive .entry-title {
-    clear: none;
-}
-
 
 /* =Widget Areas
 -------------------------------------------------------------- */
@@ -216,21 +183,20 @@ margin:0;
 	margin-bottom:20px;
 }
 h2.page-title, h3.section-title{
-background:#E4F2FD;
-text-shadow:0 1px 0 #FFFFFF;
-font-weight:bold;
-line-height:1;
-margin:0;
-padding:7px 4px;
+	background:#E4F2FD;
+	text-shadow:0 1px 0 #FFFFFF;
+	font-weight:bold;
+	line-height:1;
+	margin:0;
+	padding:7px 4px;
 }
 h2.page-title, h2.page-title a{
-text-decoration:none;
-font-size:16px;
+	text-decoration:none;
+	font-size:16px;
 }
 h3.section-title{
-font-size:12px;
+	font-size:12px;
 }
-
 
 /* =Alignment
 -------------------------------------------------------------- */	
@@ -246,73 +212,165 @@ font-size:12px;
 	float: right;
 }
 
+/* =Contact Info
+-------------------------------------------------------------- */
+.avatar {
+    float: left;
+    padding: 0 10px 0 0;
+}
+.archive .entry-title {
+    clear: none;
+}
 
-/* =Vcards
+/* =VCards
 -------------------------------------------------------------- */	
 ul.vcard, .vcard li, ul.group {
-margin-left:0;
-list-style:none;
+	margin-left:0;
+	list-style:none;
 }
 .vcard .avatar {
-margin-right:5px;
+	margin-right:5px;
 }
 .vcard .tel, .vcard .social, .vcard .adr, .vcard .website, .entry-utility {
-clear:both;
+	clear:both;
 }
 .vcard .fn, .vcard .title, .vcard .org {
-width:50%;
-float:left;
+	width:50%;
+	float:left;
 }
 .type-contact .tag-links,.type-contact  .cat-links,.type-contact  .entry-utility .meta-sep {
-display:none;
+	display:none;
 }
 .type-contact  .notes-link {
-float:right;
+	float:right;
 
 /* =Notes
 -------------------------------------------------------------- */	
-#notes{padding: 5px;}
-ol.notelist { list-style:none; margin:0; padding:0; clear:both; }
-ol.notelist li, #note { border:1px solid #d5d5d5; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; margin:0 0 10px; padding:5px 7px 5px 5px; position:relative; }
-ol.notelist li.pingback comment-author { padding:0 170px 0 0; }
-ol.notelist li div.vcard { font-size: 14px; line-height: 16px;}
-ol.notelist li div.vcard cite.fn { font-style:normal; font-weight:bold; }
-ol.notelist li div.vcard cite.fn a.url { color:#cc0000; text-decoration:none; }
-ol.notelist li div.vcard cite.fn a.url:hover { color:#000; }
-ol.notelist li div.vcard img.avatar { background: #fff; border:1px solid #aaa; padding: 5px; left:7px; position:absolute; top:7px; }
-ol.notelist li div.note-meta { font-size: 10px; line-height: 16px;text-align:right;}
-ol.notelist li div.note-meta a { color:#205B87; text-decoration:none; }
-ol.notelist li p { font-weight:normal; font-size: 12px; line-height: 16px; margin:5px 0 12px; }
-ol.notelist li ul { font-weight:normal; font-size: 12px; line-height: 16px; list-style:square; margin:0 0 12px; padding:0; }
-ol.notelist li ul.children { list-style:none; margin:12px 0 0; text-indent:0; }
-ol.notelist li ul.children li.depth-2 { margin:0 0 0 24px; }
-ol.notelist li ul.children li.depth-3 { margin:0 0 0 24px; }
-ol.notelist li ul.children li.depth-4 { margin:0 0 0 24px; }
-ol.notelist li ul.children li.depth-5 { margin:0 0 0 24px; }
-ol.notelist ul.children li.odd { background:#fff; }
-ol.notelist ul.children li.even { background:#f6f6f6; }
-ol.notelist li.pingback div.vcard { padding:0 170px 0 0; }
-#notes h3, #respond h3 {font-weight:bold;text-align:center;}
-#noteform {padding:5px;width:90%;}
-#note {width:100%;}
+#notes{
+	padding: 5px;
+}
+ol.notelist {
+	list-style:none;
+	margin:0;
+	padding:0;
+	clear:both;
+}
+ol.notelist li, #note { 
+	border:1px solid #d5d5d5; 
+	border-radius:5px; 
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px; 
+	-khtml-border-radius:5px; 
+	margin:0 0 10px; 
+	padding:5px 7px 5px 5px; 
+	position:relative;
+}
+ol.notelist li.pingback comment-author { 
+	padding:0 170px 0 0;
+	}
+ol.notelist li div.vcard { 
+	font-size: 14px;
+	line-height: 16px;
+}
+ol.notelist li div.vcard cite.fn { 
+	font-style:normal; 
+	font-weight:bold; 
+}
+ol.notelist li div.vcard cite.fn a.url {
+	color:#cc0000; 
+	text-decoration:none;
+}
+ol.notelist li div.vcard cite.fn a.url:hover { 
+	color:#000;
+}
+ol.notelist li div.vcard img.avatar {
+	background: #fff;
+	border:1px solid #aaa;
+	padding: 5px;
+	left:7px;
+	position:absolute;
+	top:7px;
+}
+ol.notelist li div.note-meta {
+	font-size: 10px; 
+	line-height: 16px;
+	text-align:right;
+}
+ol.notelist li div.note-meta a { 
+	color:#205B87; 
+	text-decoration:none;
+}
+ol.notelist li p { 
+	font-weight:normal; 
+	font-size: 12px; 
+	line-height: 16px; 
+	margin:5px 0 12px;
+}
+ol.notelist li ul { 
+	font-weight:normal; 
+	font-size: 12px; 
+	line-height: 16px; 
+	list-style:square; 
+	margin:0 0 12px; 
+	padding:0; 
+}
+ol.notelist li ul.children {
+	list-style:none;
+	margin:12px 0 0;
+	text-indent:0;
+}
+ol.notelist li ul.children li.depth-2 { 
+	margin:0 0 0 24px; 
+}
+ol.notelist li ul.children li.depth-3 { 
+	margin:0 0 0 24px; 
+}
+ol.notelist li ul.children li.depth-4 { 
+	margin:0 0 0 24px; 
+}
+ol.notelist li ul.children li.depth-25{ 
+	margin:0 0 0 24px; 
+}
+ol.notelist ul.children li.odd { 
+	background:#fff;
+}
+ol.notelist ul.children li.even {
+	background:#f6f6f6;
+}
+ol.notelist li.pingback div.vcard {
+	padding:0 170px 0 0;
+}
+#notes h3, #respond h3 {
+	font-weight:bold;
+	text-align:center;
+}
+#noteform {
+	padding:5px;
+	width:90%;
+}
+#note {
+	width:100%;
+}
+#respond {
+	padding:5px;
+	width:90%;
+}
 
 ol.notelist li .attach {
-background:url(img/attach.png) no-repeat scroll right top;
-text-indent:-9999px;
-height:16px;
-width:16px;
-position:absolute;
+	background:url(img/attach.png) no-repeat scroll right top;
+	text-indent:-9999px;
+	height:16px;
+	width:16px;
+	position:absolute;
 }
 ol.notelist li .attach a {
-display:block;
-width:16px;
-height:16px;
+	display:block;
+	width:16px;
+	height:16px;
 }
-
 
 /* =Forms
 -------------------------------------------------------------- */	
 .inlineLabels .multipleInput .phone, .inlineLabels .multipleInput .im {
-width:150px;
+	width:150px;
 }
-
