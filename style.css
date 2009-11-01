@@ -243,7 +243,7 @@ ul.vcard, .vcard li, ul.group {
 }
 .type-contact  .notes-link {
 	float:right;
-
+}
 /* =Notes
 -------------------------------------------------------------- */	
 #notes{
@@ -372,5 +372,42 @@ ol.notelist li .attach a {
 /* =Forms
 -------------------------------------------------------------- */	
 .inlineLabels .multipleInput .phone, .inlineLabels .multipleInput .im {
-	width:150px;
+	/*width:150px;*/
+}
+
+/* =Form: company autocomplete
+-------------------------------------------------------------- */
+.ac_results {
+    border-style:solid;
+    border-width:1px;
+    display:none;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position:absolute;
+    z-index:10000;
+}
+.ac_results li {
+    padding:2px 5px;
+    text-align:left;
+    white-space:nowrap;
+    color:#101010;
+}
+.ac_over {
+    cursor:pointer;
+}
+.ac_match {
+    text-decoration:underline;
+}
+.ac_over {
+    background-color:#F0F0B8;
+}
+.ac_results {
+    background-color:#FFFFFF;
+    border-color:#808080;
+}
+.ac_results li {
+    color:#101010;
 }
