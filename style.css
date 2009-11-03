@@ -35,6 +35,9 @@ Hybrid Theme by Justin Tadlock http://themehybrid.com
 /* Basic WordPress Styles */
 @import url('../rolopress-core/styles/wp.css');
 
+/* Default Screen Styles */
+@import url('../rolopress-core/styles/screen.css');
+
 /* Styles for Widget Areas */
 @import url('../rolopress-core/styles/widgets.css');
 
@@ -114,9 +117,6 @@ a:hover {
 
 /* =main
 -------------------------------------------------------------- */
-.entry-main, .entry-summary {
-	margin: 1.5em 0 0 0;
-}
 #info .page, #info .post, .inside {
 	padding: 5px;
 }
@@ -231,19 +231,21 @@ ul.vcard, .vcard li, ul.group {
 .vcard .avatar {
 	margin-right:5px;
 }
-.vcard .tel, .vcard .social, .vcard .adr, .vcard .website, .entry-utility {
+.vcard .tel, .vcard .social, .vcard .adr{
 	clear:both;
 }
-.vcard .fn, .vcard .title, .vcard .org {
-	width:50%;
-	float:left;
+.entry-utility {
+	clear:both;
+	text-align:right;
 }
-.type-contact .tag-links,.type-contact  .cat-links,.type-contact  .entry-utility .meta-sep {
+.vcard .fn, .vcard .title, .vcard .org {
+	width:48%;
+	/*float:left;*/
+}
+.type-contact .tag-links,.type-contact  .cat-links,.type-contact  .entry-utility .meta-sep ,.type-company .tag-links,.type-company  .cat-links,.type-company  .entry-utility .meta-sep {
 	display:none;
 }
-.type-contact  .notes-link {
-	float:right;
-}
+
 /* =Notes
 -------------------------------------------------------------- */	
 #notes{
@@ -410,4 +412,26 @@ ol.notelist li .attach a {
 }
 .ac_results li {
     color:#101010;
+}
+
+/* =Widget Page Template
+-------------------------------------------------------------- */
+.page-template-widget-page .entry-main ul {
+float:left;
+margin:0;
+width:98%;
+}
+.page-template-widget-page .entry-main ul li {
+float:left;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin:5px;
+width:48%;
+}
+.page-template-widget-page .entry-main li ul li {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:disc;
+width:98%;
 }
