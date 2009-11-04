@@ -51,7 +51,7 @@ body, html {
 	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
 }
 #wrapper {
-	margin: 1.5em 15%;
+	margin: 1.5em 5%;
 	clear: both;
 }
 a {
@@ -65,6 +65,28 @@ a:hover {
 -------------------------------------------------------------- */
 #branding {
 	margin: 0 0 1.5em 0;
+}
+
+/* =Home Page
+-------------------------------------------------------------- */
+#home ul.xoxo {
+width:98%;
+margin:0;
+}
+#home ul {
+margin:0;
+}
+#home ul li.widget {
+float:left;
+margin:1%;
+width:31%;
+}
+#home li.widget li {
+list-style:disc;
+list-style-position:inside;
+}
+#home br {
+clear:left;
 }
 
 /* =Menu
