@@ -67,28 +67,6 @@ a:hover {
 	margin: 0 0 1.5em 0;
 }
 
-/* =Home Page
--------------------------------------------------------------- */
-#home ul.xoxo {
-width:98%;
-margin:0;
-}
-#home ul {
-margin:0;
-}
-#home ul li.widget {
-float:left;
-margin:1%;
-width:31%;
-}
-#home li.widget li {
-list-style:disc;
-list-style-position:inside;
-}
-#home br {
-clear:left;
-}
-
 /* =Menu
 -------------------------------------------------------------- */
 #access {
@@ -159,14 +137,14 @@ clear:left;
 
 /* =Archives
 -------------------------------------------------------------- */
-.archive .odd, .home .odd  { /* adds invisible border so hover effect doesn't shake */
+.item-list .even { /* adds invisible border so hover effect doesn't shake */
     border:2px solid #f7f7f7;
     background: #f7f7f7;
 }
-.archive .even, .home .even   { /* adds invisible border so hover effect doesn't shake */
+.item-list .odd { /* adds invisible border so hover effect doesn't shake */
     border:2px solid #fff;
 }
-.archive .odd:hover, .archive .even:hover, .home .odd:hover, .home .even:hover    {
+.item-list .even:hover , .item-list .odd:hover{
     border:2px solid #d5d5d5;
 	-webkit-border-radius: 3px;
 	-khtml-border-radius: 3px;	
@@ -177,8 +155,11 @@ clear:left;
     height: auto;
     padding:0 10px 0 0;
 }
-.archive .post .entry-meta,.archive .post .entry-summary{
+.entry-meta,.entry-summary{
     display:none;
+}
+.single .entry-meta,.single .entry-summary{
+    display:block;
 }
 ul.item-list {
 	list-style-type:none;
@@ -261,14 +242,14 @@ ul.vcard, .vcard li, ul.group {
 	clear:both;
 	text-align:right;
 }
-.archive .tag-links,.archive  .cat-links,.archive  .entry-utility .meta-sep {
+tag-links,.cat-links,.entry-utility .meta-sep {
 	display:none;
 }
 
 /* =Company Info
 -------------------------------------------------------------- */	
-.type-company .fn {
-font-size:20px;
+.fn {
+font-size:16px;
 font-weight:bold;
 }
 
@@ -356,14 +337,14 @@ ol.notelist li ul.children li.depth-3 {
 ol.notelist li ul.children li.depth-4 { 
 	margin:0 0 0 24px; 
 }
-ol.notelist li ul.children li.depth-25{ 
+ol.notelist li ul.children li.depth-5{ 
 	margin:0 0 0 24px; 
 }
 ol.notelist ul.children li.odd { 
 	background:#fff;
 }
 ol.notelist ul.children li.even {
-	background:#f6f6f6;
+    border:2px solid #d5d5d5; /* adds invisible border so hover effect doesn't shake */
 }
 ol.notelist li.pingback div.vcard {
 	padding:0 170px 0 0;
@@ -432,10 +413,4 @@ display:inline-block;
 padding-right:20px;
 line-height:18px;
 background:transparent url(img/email_go.png) center right no-repeat;
-}
-a.url {
-display:inline-block;
-padding-right:20px;
-line-height:18px;
-background:transparent url(img/sitelink.png) center right no-repeat;
 }
