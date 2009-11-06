@@ -165,6 +165,11 @@ ul.item-list {
 	list-style-type:none;
 	margin:0;
 }
+.archive-meta {
+padding:5px;
+border-bottom:3px solid #E4F2FD;
+background:#F7F7F7;
+}
 
 /* =Widget Areas
 -------------------------------------------------------------- */
@@ -371,6 +376,7 @@ ol.notelist li .attach {
 	height:16px;
 	width:16px;
 	position:absolute;
+	margin-left:10px;
 }
 ol.notelist li .attach a {
 	display:block;
