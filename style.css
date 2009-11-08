@@ -193,6 +193,15 @@ background:#F7F7F7;
 .widget-area li {
 list-style-type:disc;
 }
+.widget-area ul.vcard {
+margin-left:5px;
+}
+.widget-area ul.group {
+margin-left:0;
+}
+.entry-main .section-title, .entry-main .widget .fn, .entry-main .widget .org, .entry-main .widget .email {
+display:none;
+}
 h2.page-title, h3.section-title{
 	background:#E4F2FD;
 	text-shadow:0 1px 0 #FFFFFF;
@@ -229,6 +238,8 @@ h3.section-title{
     float: left;
     margin: 0 10px 0 0;
 	border: 2px solid #E4F2FD;
+    height:60px;
+    width:60px;
 }
 .archive .entry-title {
     clear: none;
@@ -236,7 +247,7 @@ h3.section-title{
 
 /* =VCards
 -------------------------------------------------------------- */	
-ul.vcard, .vcard li, ul.group {
+ul.vcard, .vcard li, ul.group, ul.item-header, .item-header li {
 	margin-left:0;
 	list-style:none;
 }
@@ -249,6 +260,9 @@ ul.vcard, .vcard li, ul.group {
 }
 tag-links,.cat-links,.entry-utility .meta-sep {
 	display:none;
+}
+.street-address {
+display:block;
 }
 
 /* =Company Info
