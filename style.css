@@ -115,6 +115,17 @@ a:hover {
 	color: white;
 }
 
+/* =navigation
+-------------------------------------------------------------- */
+#nav-above {
+display:none;
+}
+#nav-below {
+margin-top: 10px;
+}
+.nav-next {
+float:right;
+}
 /* =main
 -------------------------------------------------------------- */
 #info .page, #info .post, .inside {
@@ -133,6 +144,25 @@ a:hover {
 }
 .post-edit-link{
 	font-size:10px !important;
+}
+
+/* =footer
+-------------------------------------------------------------- */
+#footer {
+background:#464646 none repeat scroll 0 0;
+border-top:3px solid #4384BA;
+height:40px;
+margin-top:-40px;
+padding:5px 15%;
+position:relative;
+width:70%;
+z-index:10;
+color:white;
+text-align: center;
+}
+#footer a {
+color: white;
+font-weight: bold;
 }
 
 /* =Archives
@@ -216,6 +246,10 @@ h2.page-title, h2.page-title a{
 }
 h3.section-title{
 	font-size:12px;
+}
+.entry-main li.widget {
+width:33%;
+float:left;
 }
 
 /* =Alignment
