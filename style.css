@@ -54,6 +54,13 @@ body, html {
 	margin: 1.5em 5%;
 	clear: both;
 }
+html, body, #wrapper {height: 100%;}
+
+body > #wrapper {height: auto; min-height: 100%;}
+
+#main {padding-bottom: 40px;} 
+
+
 a {
     text-decoration:none;
 }
@@ -107,6 +114,11 @@ a:hover {
 }
 #menu .widget-title {
     display: none;
+}
+#menu .add-contact, #menu .add-company {
+background:transparent url(../rolopress-core/img/forms/add.png) no-repeat scroll center left;
+text-indent:-9999px;
+width:16px
 }
 #app-title a{
 	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
