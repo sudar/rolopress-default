@@ -115,7 +115,7 @@ a:hover {
 #menu .widget-title {
     display: none;
 }
-#menu .add-contact, #menu .add-company {
+#menu a[title="Add Contact"], #menu a[title="Add Company"]{
 background:transparent url(../rolopress-core/img/forms/add.png) no-repeat scroll center left;
 text-indent:-9999px;
 width:16px
