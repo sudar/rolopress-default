@@ -492,11 +492,51 @@ display:block;
 	border-radius: 6px;
 }
 
-/* =Link Icons
+/* = Icons
 -------------------------------------------------------------- */
-a[href^="mailto:"] {
-display:inline-block;
-padding-right:20px;
-line-height:18px;
-background:transparent url(img/email_go.png) center right no-repeat;
+.inside li.email a {
+background:transparent url(img/email_go.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside li.org  {
+background:transparent url(img/building.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside li.adr  {
+background:transparent url(img/map_go.png) no-repeat scroll left top;
+padding-left:20px
+}
+.inside li.tel  {
+background:transparent url(img/telephone.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside li.website  {
+background:transparent url(img/world_go.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside .website span.type {
+display:none;
+}
+.inside li.social-yahoo  {
+background:transparent url(img/yahoo.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside li.social-msn  {
+background:transparent url(img/msn.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside li.social-aim  {
+background:transparent url(img/aim.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside li.social-gtalk  {
+background:transparent url(img/gtalk.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside li.social-twitter  {
+background:transparent url(img/twitter.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside .social-twitter span.type {
+display:none;
 }
