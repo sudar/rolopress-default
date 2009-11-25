@@ -502,12 +502,31 @@ padding-left:20px
 background:transparent url(img/building.png) no-repeat scroll left center;
 padding-left:20px
 }
-.inside li.adr  {
+.inside .map span.type {
+display:none;
+}
+.inside .map .url {
 background:transparent url(img/map_go.png) no-repeat scroll left top;
-padding-left:20px
+padding-left:20px;
+position:absolute;
+text-indent:-9999px
+}
+.map .url:hover {
+filter: alpha(opacity=50); /* internet explorer */
+opacity: 0.5;           /* fx, safari, opera, chrome */
+}
+.inside ul.adr {
+margin:0;
+}
+.inside li.adr {
+padding-left:20px;
 }
 .inside li.tel  {
 background:transparent url(img/telephone.png) no-repeat scroll left center;
+padding-left:20px
+}
+.inside li.tel-fax  {
+background:transparent url(img/fax.png) no-repeat scroll left center;
 padding-left:20px
 }
 .inside li.website  {
