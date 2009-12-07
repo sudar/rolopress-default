@@ -454,6 +454,26 @@ ol.notelist li .attach a {
 .inlineLabels .multipleInput .phone, .inlineLabels .multipleInput .im {
 	width:150px;
 }
+.website.input-prefix {
+width:50%;
+}
+.ctrlHolder.website {
+width:122%;
+}
+.prefix.website {
+margin-left:5px;
+color:gray;
+}
+.twitter.input-prefix {
+width:33%;
+}
+.ctrlHolder.twitter {
+width:156%;
+}
+.prefix.twitter {
+margin-left:5px;
+color:gray;
+}
 
 /* =Widget Page Template
 -------------------------------------------------------------- */
