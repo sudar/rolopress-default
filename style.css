@@ -24,7 +24,7 @@ Hybrid Theme by Justin Tadlock http://themehybrid.com
 
 
 /* Import a basic layout */
-@import url('../rolopress-core/styles/2c-r.css');
+@import url('../rolopress-core/styles/wide-columns/3c-b-rw.css');
 
 /* Reset default browser styles */
 @import url('../rolopress-core/styles/reset.css');
@@ -51,7 +51,6 @@ body, html {
 	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
 }
 #wrapper {
-	margin: 1.5em 5%;
 	clear: both;
 }
 html, body, #wrapper {height: 100%;}
@@ -115,6 +114,9 @@ a:hover {
 #menu .widget-title {
     display: none;
 }
+#main li.widget {
+width:50%;
+}
 #menu a[title="Add Contact"], #menu a[title="Add Company"]{
 background:transparent url(../rolopress-core/img/forms/add.png) no-repeat scroll center left;
 text-indent:-9999px;
@@ -140,7 +142,10 @@ float:right;
 }
 /* =main
 -------------------------------------------------------------- */
-#info .page, #info .post, .inside {
+#info .page, #info .post {
+	padding: 5px 15px;
+}
+.inside {
 	padding: 5px;
 }
 #info,#primary li.widget,#secondary li.widget  {
@@ -202,6 +207,7 @@ font-weight: bold;
 }
 .single .entry-meta,.single .entry-summary{
     display:block;
+	float: right;
 }
 ul.item-list {
 	list-style-type:none;
@@ -220,15 +226,15 @@ border-top: 1px solid #fff;
 
 /* =Widget Areas
 -------------------------------------------------------------- */
-.widget-area ul {
+.widget ul {
 	list-style: none;
 	margin-left: 0;
 }
-.widget-area ul ul {
+.widget ul ul {
 	list-style: disc;
 	margin:0.3em 0 0.3em 1.5em;
 }
-.widget-area ul ul ul {
+.widget ul ul ul {
 	margin-left: 2em;
 }
 .widget-container {
@@ -237,13 +243,13 @@ border-top: 1px solid #fff;
 #primary li.widget,#secondary li.widget  {
 	margin-bottom:20px;
 }
-.widget-area li {
+.widget li {
 list-style-type:disc;
 }
-.widget-area ul.vcard {
+.widget ul.vcard {
 margin-left:5px;
 }
-.widget-area ul.group {
+.widget ul.group {
 margin-left:0;
 }
 .entry-main .section-title, .entry-main .widget .fn, .entry-main .widget .org, .entry-main .widget .email {
@@ -264,10 +270,7 @@ h2.page-title, h2.page-title a{
 h3.section-title{
 	font-size:12px;
 }
-.entry-main li.widget {
-width:33%;
-float:left;
-}
+
 
 /* =Alignment
 -------------------------------------------------------------- */	
@@ -428,7 +431,9 @@ ol.notelist li.pingback div.vcard {
 	width:90%;
 }
 #note {
-	width:100%;
+height:50px;
+overflow:auto;
+width:100%;
 }
 #respond {
 	padding:5px;
