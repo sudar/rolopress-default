@@ -250,7 +250,7 @@ margin-left:5px;
 .widget ul.group {
 margin-left:0;
 }
-.entry-main .section-title, .entry-main .widget .fn, .entry-main .widget .org, .entry-main .widget .email {
+.entry-main .widget .fn, .entry-main .widget .org, .entry-main .widget .email {
 display:none;
 }
 h2.page-title, h3.section-title{
