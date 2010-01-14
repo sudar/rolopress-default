@@ -4,7 +4,7 @@ Theme URI: http://rolopress.com
 Description: A Contact Manager built on WordPress
 Author: <a href="http://slipfire.com/">SlipFire</a> &amp; <a href="http://sudarmuthu.com/">Sudar Muthu</a>
 Author URI: 
-Version: 0.11
+Version: 0.1
 Tags: contact-manager, crm
 Template: rolopress-core
 
@@ -250,7 +250,7 @@ margin-left:5px;
 .widget ul.group {
 margin-left:0;
 }
-.entry-main .section-title, .entry-main .widget .fn, .entry-main .widget .org, .entry-main .widget .email {
+.entry-main .widget .fn, .entry-main .widget .org, .entry-main .widget .email {
 display:none;
 }
 h2.page-title, h3.section-title{
@@ -310,7 +310,7 @@ ul.vcard, .vcard li, ul.group, ul.item-header, .item-header li {
 	clear:both;
 	text-align:right;
 }
-tag-links,.cat-links,.entry-utility .meta-sep {
+.tag-links,.cat-links,.entry-utility .meta-sep {
 	display:none;
 }
 .street-address {
@@ -522,6 +522,9 @@ display:block;
 
 /* = Icons
 -------------------------------------------------------------- */
+.url-field span.type {
+display:none;
+}
 .inside li.email a {
 background:transparent url(img/email_go.png) no-repeat scroll left center;
 padding-left:20px
@@ -530,31 +533,47 @@ padding-left:20px
 background:transparent url(img/building.png) no-repeat scroll left center;
 padding-left:20px
 }
-.inside .map span.type {
-display:none;
+.inside .map {
+    height: 16px;
+    width: 16px;
+    position: absolute;
 }
-.inside .map .url {
+.inside .map span {
 background:transparent url(img/map_go.png) no-repeat scroll left top;
-padding-left:20px;
-position:absolute;
-text-indent:-9999px
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+	font-size:0px;
+}
+.inside .map a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
 }
 .map .url:hover {
 filter: alpha(opacity=50); /* internet explorer */
 opacity: 0.5;           /* fx, safari, opera, chrome */
 }
 .inside ul.adr {
-margin:0;
-}
-.inside li.adr {
 padding-left:20px;
+margin: 0px;
+*display:inline; /* hack for ie */
+}
+.inside ul.adr li.url-field {
+padding-right:5px;
+display:inline;
+}
+.inside li.email {
+clear:both;
 }
 .inside li.tel  {
 background:transparent url(img/telephone.png) no-repeat scroll left center;
 padding-left:20px
 }
 .inside li.tel-fax  {
-background:transparent url(img/fax.png) no-repeat scroll left center;
+background:transparent url(img/telephone.png) no-repeat scroll left center;
 padding-left:20px
 }
 .inside li.website  {
