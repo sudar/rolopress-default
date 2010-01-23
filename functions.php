@@ -1,21 +1,31 @@
 <?php
 
 
-/* Create your own menu */
+/**
+ * Here's an example on how to remove the default RoloPress menu and add your own.
+ */
 
-add_action('init', 'remove_rolopress_default_menu'); // first call the function to remove the default menu
+ 
+/*
 
-function remove_rolopress_default_menu() { // here's where we remove the default menu
-      remove_filter('rolopress_menu', 'rolopress_default_menu');
-}
+// First remove the default menu
+function remove_rolopress_default_menu() {
+	remove_action('rolopress_before_wrapper', 'rolopress_default_menu');
+	}
+add_action('init','remove_rolopress_default_menu');
 
+// Then add your own
 function my_menu() { // here's our new menu
 
-    /* Widgetized Menu*/
-					echo "new menu item";
-				}
+				echo "new menu item";
+	}
 
-add_filter('rolopress_menu', 'my_menu');
+add_action('rolopress_before_wrapper', 'my_menu');
+
+*/
+
+
+
 
 
 
