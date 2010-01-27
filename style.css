@@ -214,7 +214,7 @@ ul.item-list {
 .archive-meta {
 padding:5px;
 border-bottom:3px solid #E4F2FD;
-background:#F7F7F7;
+background:#E4F2FD;
 }
 .archive.taxonomy-company .item-1 {
 background:#E4F2FD;
@@ -253,6 +253,9 @@ margin-left:0;
 .entry-main .widget .fn, .entry-main .widget .org, .entry-main .widget .email {
 display:none;
 }
+.singular-post .entry-main  .widget-area {
+margin: 35px 0 0 0;
+}
 h2.page-title, h3.section-title{
 	background:#E4F2FD;
 	text-shadow:0 1px 0 #FFFFFF;
@@ -284,14 +287,18 @@ h3.section-title{
 	float: right;
 }
 
-/* =Contact Info
+/* =Item Info
 -------------------------------------------------------------- */
-.avatar {
+.avatar, .entry-icon  {
     float: left;
     margin: 0 10px 0 0;
 	border: 2px solid #E4F2FD;
     height:60px;
     width:60px;
+}
+.fn ,.entry-title{
+font-size:16px;
+font-weight:bold;
 }
 .archive .entry-title {
     clear: none;
@@ -299,7 +306,7 @@ h3.section-title{
 
 /* =VCards
 -------------------------------------------------------------- */	
-ul.vcard, .vcard li, ul.group, ul.item-header, .item-header li {
+ul.vcard, .vcard li, ul.group, ul.item-header, .item-header li , ul.entry-header, .entry-header li{
 	margin-left:0;
 	list-style:none;
 }
@@ -310,19 +317,13 @@ ul.vcard, .vcard li, ul.group, ul.item-header, .item-header li {
 	clear:both;
 	text-align:right;
 }
-.tag-links,.cat-links,.entry-utility .meta-sep {
+.tag-links,.cat-links {
 	display:none;
 }
 .street-address {
 display:block;
 }
 
-/* =Company Info
--------------------------------------------------------------- */	
-.fn {
-font-size:16px;
-font-weight:bold;
-}
 
 /* =Notes
 -------------------------------------------------------------- */	
