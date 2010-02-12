@@ -24,9 +24,6 @@ Hybrid Theme by Justin Tadlock http://themehybrid.com
 /* Reset default browser styles */
 @import url('../rolopress-core/library/styles/reset.css');
 
-/* Import a standard layout */
-@import url('../rolopress-core/library/styles/wide-columns/3c-b-rw.css');
-
 /* Rebuild default browser styles */
 @import url('../rolopress-core/library/styles/rebuild.css');
 
