@@ -500,7 +500,33 @@ display:block;
 .url-field span.type {
 display:none;
 }
-.inside li.email a {
+.inside .vcard-export {
+float:left;
+height:16px;
+margin-right:5px;
+margin-top:3px;
+position:relative;
+width:16px
+}
+.inside .vcard-export  span {
+background:transparent url(img/vcard.png) no-repeat scroll left top;
+width: 16px;
+height: 16px;
+position: absolute;
+top: 0;
+left: 0;
+font-size:0px;
+}
+.inside .vcard-export  a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.vcard-export  .url:hover {
+filter: alpha(opacity=50); /* internet explorer */
+opacity: 0.5;           /* fx, safari, opera, chrome */
+}
+.inside li a.email {
 background:transparent url(img/email_go.png) no-repeat scroll left center;
 padding-left:20px
 }
