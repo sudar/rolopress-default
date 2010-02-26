@@ -413,7 +413,7 @@ width:100%;
 	width:90%;
 }
 
-ol.notelist li .attach {
+ol.notelist li .comment-reply-link {
 	background:url(img/attach.png) no-repeat scroll right top;
 	text-indent:-9999px;
 	height:16px;
@@ -421,7 +421,7 @@ ol.notelist li .attach {
 	position:absolute;
 	margin-left:10px;
 }
-ol.notelist li .attach a {
+ol.notelist li .comment-reply-link a {
 	display:block;
 	width:16px;
 	height:16px;
