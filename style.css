@@ -284,6 +284,9 @@ ul.vcard, .vcard li, ul.group, ul.item-header, .item-header li , ul.entry-header
 	margin-left:0;
 	list-style:none;
 }
+li.contact-details li, li.company-details li  {
+list-style:none !important;
+}
 .vcard .tel, .vcard .social, .vcard .adr{
 	clear:both;
 }
