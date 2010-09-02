@@ -4,7 +4,7 @@ Theme URI: http://rolopress.com
 Description: A Contact Manager built on WordPress
 Author: <a href="http://slipfire.com/">SlipFire</a> &amp; <a href="http://sudarmuthu.com/">Sudar Muthu</a>
 Author URI: 
-Version: 1.3
+Version: 1.4
 Tags: contact-manager, crm
 Template: rolopress-core
 
@@ -18,19 +18,18 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 */
 
 body, html {
-	margin: 0;
-	padding:0;
-	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+    margin: 0;
+    padding:0;
+    font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
 }
 #wrapper {
-	clear: both;
+    clear: both;
 }
 html, body, #wrapper {height: 100%;}
 
 body > #wrapper {height: auto; min-height: 100%;}
 
-#main {padding-bottom: 40px;} 
-
+#container {margin-bottom:10px;}
 
 a {
     text-decoration:none;
@@ -42,133 +41,139 @@ a:hover {
 /* =Header
 -------------------------------------------------------------- */
 #branding {
-	margin: 0 0 1.5em 0;
+    margin: 0 0 1.5em 0;
 }
 
 /* =Menu
 -------------------------------------------------------------- */
 #access {
-	margin: 0 0 1.5em 0;
-	overflow: auto;
+    margin: 0 0 1.5em 0;
+    overflow: auto;
 }
 .skip-link {
-	display: none;
+    display: none;
 }
-#menu {
-	height: 36px;
-	background: #464646;
-	padding:5px 15px;
+.menu-main-menu-container {
+    background: #464646;
+    float:left;
 }
+
 #menu ul {
-	list-style: none;
-	margin: 0;
+    list-style: none;
+    margin: 0;
 }
 #menu ul ul {
-	display: none;
+    display: none;
 }
 #menu li {
-	display: inline;
+    display: inline;
 }
-#menu a {
-	display: block;
-	float: left;
-	padding:0 10px 0 0;
-	color:#ccc;
-	text-decoration:none; 
+#menu .menu_item  a {
+    display: block;
+    float: left;
+    color:#ccc;
+    text-decoration:none;
 }
-#menu a:hover {
-	color:#FFFFFF;
-	text-decoration:underline;
+#menu .menu_item  a:hover {
+    color:#FFFFFF;
+    text-decoration:underline;
 }
-.menu_item {
-	line-height: 36px;
+#menu  .menu_item {
+    line-height: 36px;
 }
 #menu .widget-title {
     display: none;
 }
 #main li.widget {
-width:50%;
+    width:50%;
 }
-#menu .default_menu a[title="Add Contact"], #menu .default_menu a[title="Add Company"]{
-background:transparent url(../rolopress-core/library/images/forms/add.png) no-repeat scroll center left;
-text-indent:-9999px;
-width:16px
+
+#menu li.icon-add a {
+    background:transparent url(../rolopress-core/library/images/forms/add.png) no-repeat scroll center left;
+    text-indent:-9999px;
+    width:16px;
+    margin:5px 0 0;
 }
-#app-title a{
-	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
-	font-size: 22px;
-	text-decoration: none;
-	color: white;
+
+
+#menu .menu-item a {
+    padding:10px 15px 0 0;
 }
+
+#menu .home a{
+    font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-size: 22px;
+    padding:0 15px 0 0;
+    text-decoration: none;
+    color: white;
+}
+
 
 /* =navigation
 -------------------------------------------------------------- */
 #nav-above {
-display:none;
+    display:none;
 }
 #nav-below {
-margin-top: 10px;
+    margin-top: 10px;
 }
 .nav-next {
-float:right;
+    float:right;
 }
 /* =main
 -------------------------------------------------------------- */
-#info .page, #info .post {
-	padding: 5px 15px;
+#main .page, #main .post {
+    padding: 5px 15px;
 }
 .inside {
-	padding: 5px;
+    padding: 5px;
 }
-#info,#primary li.widget,#secondary li.widget  {
-	border: 4px solid #E4F2FD;
-	-webkit-border-radius: 6px;
-	-khtml-border-radius: 6px;	
-	-moz-border-radius: 6px;
-	border-radius: 6px;
+#main,#primary li.widget,#secondary li.widget  {
+    border: 4px solid #E4F2FD;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 .post .entry-meta {
-	text-align:right;
-	font-size:0.9em;
+    text-align:right;
+    font-size:0.9em;
 }
 .post-edit-link{
-	font-size:10px !important;
+    font-size:10px !important;
 }
 
 /* =footer
 -------------------------------------------------------------- */
 #footer {
-background:#464646 none repeat scroll 0 0;
-border-top:3px solid #4384BA;
-height:40px;
-margin-top:-40px;
-padding:5px 15%;
-position:relative;
-width:70%;
-z-index:10;
-color:white;
-text-align: center;
+    background:none repeat scroll 0 0 #464646;
+    border-top:3px solid #4384BA;
+    color:white;
+    height:40px;
+    margin-top:-40px;
+    padding:5px 0;
+    text-align:center;
 }
 #footer a {
-color: white;
-font-weight: bold;
+    color: white;
+    font-weight: bold;
 }
 
 /* =Archives
 -------------------------------------------------------------- */
 .item-list .even { /* adds invisible border so hover effect doesn't shake */
-    border:2px solid #f7f7f7;
-    background: #f7f7f7;
+                   border:2px solid #f7f7f7;
+                   background: #f7f7f7;
 }
 .item-list .odd { /* adds invisible border so hover effect doesn't shake */
-    border:2px solid #fff;
+                  border:2px solid #fff;
 }
 .item-list .even:hover , .item-list .odd:hover{
     border:2px solid #d5d5d5;
-	-webkit-border-radius: 3px;
-	-khtml-border-radius: 3px;	
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 .archive .post {
     height: auto;
@@ -179,86 +184,86 @@ font-weight: bold;
 }
 .single .entry-meta,.single .entry-summary{
     display:block;
-	float: right;
+    float: right;
 }
 ul.item-list {
-	list-style-type:none;
-	margin:0;
+    list-style-type:none;
+    margin:0;
 }
 .archive-meta {
-padding:5px;
-border-bottom:3px solid #E4F2FD;
-background:#E4F2FD;
+    padding:5px;
+    border-bottom:3px solid #E4F2FD;
+    background:#E4F2FD;
 }
 .archive.taxonomy-company .item-1 {
-background:#E4F2FD;
-border: none;
-border-top: 1px solid #fff;
+    background:#E4F2FD;
+    border: none;
+    border-top: 1px solid #fff;
 }
 
 /* =Widget Areas
 -------------------------------------------------------------- */
 .widget ul {
-	list-style: none;
-	margin-left: 0;
+    list-style: none;
+    margin-left: 0;
 }
 .widget ul ul {
-	list-style: disc;
-	margin:0.3em 0 0.3em 1.5em;
+    list-style: disc;
+    margin:0.3em 0 0.3em 1.5em;
 }
 .widget ul ul ul {
-	margin-left: 2em;
+    margin-left: 2em;
 }
 .widget-container {
-	margin: 0 0 1.5em 0;
+    margin: 0 0 1.5em 0;
 }
 #primary li.widget,#secondary li.widget  {
-	margin-bottom:20px;
+    margin-bottom:20px;
 }
 .widget li {
-list-style-type:disc;
+    list-style-type:disc;
 }
 .widget ul.vcard {
-margin-left:5px;
+    margin-left:5px;
 }
 .widget ul.group {
-margin-left:0;
+    margin-left:0;
 }
 .entry-main .widget .fn, .entry-main .widget .org, .entry-main .widget .email {
-display:none;
+    display:none;
 }
 .singular-post .entry-main  .widget-area {
-margin: 55px 0 0 0;
+    margin: 55px 0 0 0;
 }
 h2.page-title, h3.section-title{
-	background:#E4F2FD;
-	text-shadow:0 1px 0 #FFFFFF;
-	font-weight:bold;
-	line-height:1;
-	margin:0;
-	padding:7px 4px;
+    background:#E4F2FD;
+    text-shadow:0 1px 0 #FFFFFF;
+    font-weight:bold;
+    line-height:1;
+    margin:0;
+    padding:7px 4px;
 }
 h2.page-title, h2.page-title a{
-	text-decoration:none;
-	font-size:16px;
+    text-decoration:none;
+    font-size:16px;
 }
 h3.section-title{
-	font-size:12px;
+    font-size:12px;
 }
 
 
 /* =Alignment
 -------------------------------------------------------------- */	
 .aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .alignleft, .alignleft li {
-	float: left;
+    float: left;
 }
 .alignright,.alignright li {
-	float: right;
+    float: right;
 }
 
 /* =Item Info
@@ -266,13 +271,13 @@ h3.section-title{
 .avatar, .entry-icon  {
     float: left;
     margin: 0 10px 0 0;
-	border: 2px solid #E4F2FD;
+    border: 2px solid #E4F2FD;
     height:60px;
     width:60px;
 }
 .fn ,.entry-title{
-font-size:16px;
-font-weight:bold;
+    font-size:16px;
+    font-weight:bold;
 }
 .archive .entry-title {
     clear: none;
@@ -281,201 +286,174 @@ font-weight:bold;
 /* =VCards
 -------------------------------------------------------------- */	
 ul.vcard, .vcard li, ul.group, ul.item-header, .item-header li , ul.entry-header, .entry-header li{
-	margin-left:0;
-	list-style:none;
+    margin-left:0;
+    list-style:none;
 }
 li.contact-details li, li.company-details li  {
-list-style:none !important;
+    list-style:none !important;
 }
 .vcard .tel, .vcard .social, .vcard .adr{
-	clear:both;
+    clear:both;
 }
 .entry-utility {
-	clear:both;
-	text-align:right;
+    clear:both;
+    text-align:right;
 }
 .tag-links,.cat-links {
-	display:none;
+    display:none;
 }
 .street-address {
-display:block;
+    display:block;
 }
 
 
 /* =Notes
 -------------------------------------------------------------- */	
 #notes{
-	padding: 5px;
+    padding: 5px;
 }
 ol.notelist {
-	list-style:none;
-	margin:0;
-	padding:0;
-	clear:both;
+    list-style:none;
+    margin:0;
+    padding:0;
+    clear:both;
 }
 ol.notelist li, #note { 
-	border:1px solid #d5d5d5; 
-	border-radius:5px; 
-	-moz-border-radius:5px; 
-	-webkit-border-radius:5px; 
-	-khtml-border-radius:5px; 
-	margin:0 0 10px; 
-	padding:5px 7px 5px 5px; 
-	position:relative;
+    border:1px solid #d5d5d5;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -khtml-border-radius:5px;
+    margin:0 0 10px;
+    padding:5px 7px 5px 5px;
+    position:relative;
 }
 ol.notelist li.pingback comment-author { 
-	padding:0 170px 0 0;
-	}
+    padding:0 170px 0 0;
+}
 ol.notelist li div.vcard { 
-	font-size: 14px;
-	line-height: 16px;
+    font-size: 14px;
+    line-height: 16px;
 }
 ol.notelist li div.vcard cite.fn { 
-	font-style:normal; 
-	font-weight:bold; 
+    font-style:normal;
+    font-weight:bold;
 }
 ol.notelist li div.vcard cite.fn a.url {
-	color:#cc0000; 
-	text-decoration:none;
+    color:#cc0000;
+    text-decoration:none;
 }
 ol.notelist li div.vcard cite.fn a.url:hover { 
-	color:#000;
+    color:#000;
 }
 ol.notelist li div.vcard img.avatar {
-	background: #fff;
-	border:1px solid #aaa;
-	padding: 5px;
-	left:7px;
-	position:absolute;
-	top:7px;
+    background: #fff;
+    border:1px solid #aaa;
+    padding: 5px;
+    left:7px;
+    position:absolute;
+    top:7px;
 }
 ol.notelist li div.note-meta {
-	font-size: 10px; 
-	line-height: 16px;
-	text-align:right;
+    font-size: 10px;
+    line-height: 16px;
+    text-align:right;
 }
 ol.notelist li div.note-meta a { 
-	color:#205B87; 
-	text-decoration:none;
+    color:#205B87;
+    text-decoration:none;
 }
 ol.notelist li p { 
-	font-weight:normal; 
-	font-size: 12px; 
-	line-height: 16px; 
-	margin:5px 0 12px;
+    font-weight:normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin:5px 0 12px;
 }
 ol.notelist li ul { 
-	font-weight:normal; 
-	font-size: 12px; 
-	line-height: 16px; 
-	list-style:square; 
-	margin:0 0 12px; 
-	padding:0; 
+    font-weight:normal;
+    font-size: 12px;
+    line-height: 16px;
+    list-style:square;
+    margin:0 0 12px;
+    padding:0;
 }
 ol.notelist li ul.children {
-	list-style:none;
-	margin:12px 0 0;
-	text-indent:0;
+    list-style:none;
+    margin:12px 0 0;
+    text-indent:0;
 }
 ol.notelist li ul.children li.depth-2 { 
-	margin:0 0 0 24px; 
+    margin:0 0 0 24px;
 }
 ol.notelist li ul.children li.depth-3 { 
-	margin:0 0 0 24px; 
+    margin:0 0 0 24px;
 }
 ol.notelist li ul.children li.depth-4 { 
-	margin:0 0 0 24px; 
+    margin:0 0 0 24px;
 }
 ol.notelist li ul.children li.depth-5{ 
-	margin:0 0 0 24px; 
+    margin:0 0 0 24px;
 }
 ol.notelist ul.children li.odd { 
-	background:#fff;
+    background:#fff;
 }
 ol.notelist ul.children li.even {
     border:2px solid #d5d5d5; /* adds invisible border so hover effect doesn't shake */
 }
 ol.notelist li.pingback div.vcard {
-	padding:0 170px 0 0;
+    padding:0 170px 0 0;
 }
 #notes h3, #respond h3 {
-	font-weight:bold;
-	text-align:center;
+    font-weight:bold;
+    text-align:center;
 }
 #noteform {
-	padding:5px;
-	width:90%;
+    padding:5px;
+    width:90%;
 }
 #note {
-height:50px;
-overflow:auto;
-width:100%;
+    height:50px;
+    overflow:auto;
+    width:100%;
 }
 #respond {
-	padding:5px;
-	width:90%;
+    padding:5px;
+    width:90%;
 }
 
 ol.notelist li .comment-reply-link {
-	background:url(img/attach.png) no-repeat scroll right top;
-	text-indent:-9999px;
-	height:16px;
-	width:16px;
-	position:absolute;
-	margin-left:10px;
+    background:url(img/attach.png) no-repeat scroll right top;
+    text-indent:-9999px;
+    height:16px;
+    width:16px;
+    position:absolute;
+    margin-left:10px;
 }
 ol.notelist li .comment-reply-link a {
-	display:block;
-	width:16px;
-	height:16px;
+    display:block;
+    width:16px;
+    height:16px;
 }
-
-/* =Forms
--------------------------------------------------------------- */	
-.inlineLabels .multipleInput .phone, .inlineLabels .multipleInput .im {
-	width:150px;
-}
-.website.input-prefix {
-width:50%;
-}
-.ctrlHolder.website {
-width:122%;
-}
-.prefix.website {
-margin-left:5px;
-color:gray;
-}
-.twitter.input-prefix {
-width:33%;
-}
-.ctrlHolder.twitter {
-width:156%;
-}
-.prefix.twitter {
-margin-left:5px;
-color:gray;
-}
-
 /* =Widget Page Template
 -------------------------------------------------------------- */
 .page-template-widget-page .entry-main ul {
-float:left;
-margin:0;
-width:98%;
+    float:left;
+    margin:0;
+    width:98%;
 }
 .page-template-widget-page .entry-main ul li {
-float:left;
-list-style-image:none;
-list-style-position:outside;
-list-style-type:none;
-margin:5px;
-width:48%;
+    float:left;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:5px;
+    width:48%;
 }
 .page-template-widget-page .entry-main li ul li {
-list-style-image:none;
-list-style-position:outside;
-list-style-type:disc;
-width:98%;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:disc;
+    width:98%;
 }
 
 .page-template-widget-page .entry-main .section-title,
@@ -486,39 +464,39 @@ width:98%;
 .page-template-widgets-no-sidebar .entry-main .widget .fn,
 .page-template-widgets-no-sidebar .entry-main .widget .org,
 .page-template-widgets-no-sidebar .entry-main .widget .email
- {
-display:block;
+{
+    display:block;
 }
 
 .page-template-widget-page  li.widget, .page-template-widgets-no-sidebar li.widget  {
-	border: 4px solid #E4F2FD;
-	-webkit-border-radius: 6px;
-	-khtml-border-radius: 6px;	
-	-moz-border-radius: 6px;
-	border-radius: 6px;
+    border: 4px solid #E4F2FD;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
 /* = Icons
 -------------------------------------------------------------- */
 .url-field span.type {
-display:none;
+    display:none;
 }
 .inside .vcard-export {
-float:left;
-height:16px;
-margin-right:5px;
-margin-top:3px;
-position:relative;
-width:16px
+    float:left;
+    height:16px;
+    margin-right:5px;
+    margin-top:3px;
+    position:relative;
+    width:16px
 }
 .inside .vcard-export  span {
-background:transparent url(img/vcard.png) no-repeat scroll left top;
-width: 16px;
-height: 16px;
-position: absolute;
-top: 0;
-left: 0;
-font-size:0px;
+    background:transparent url(img/vcard.png) no-repeat scroll left top;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size:0px;
 }
 .inside .vcard-export  a {
     display: block;
@@ -526,16 +504,16 @@ font-size:0px;
     cursor: pointer;
 }
 .vcard-export  .url:hover {
-filter: alpha(opacity=50); /* internet explorer */
-opacity: 0.5;           /* fx, safari, opera, chrome */
+    filter: alpha(opacity=50); /* internet explorer */
+    opacity: 0.5;           /* fx, safari, opera, chrome */
 }
 .inside li a.email {
-background:transparent url(img/email_go.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/email_go.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside li.org  {
-background:transparent url(img/building.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/building.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside .map {
     height: 16px;
@@ -543,13 +521,13 @@ padding-left:20px
     position: absolute;
 }
 .inside .map span {
-background:transparent url(img/map_go.png) no-repeat scroll left top;
+    background:transparent url(img/map_go.png) no-repeat scroll left top;
     width: 16px;
     height: 16px;
     position: absolute;
     top: 0;
     left: 0;
-	font-size:0px;
+    font-size:0px;
 }
 .inside .map a {
     display: block;
@@ -557,56 +535,56 @@ background:transparent url(img/map_go.png) no-repeat scroll left top;
     cursor: pointer;
 }
 .map .url:hover {
-filter: alpha(opacity=50); /* internet explorer */
-opacity: 0.5;           /* fx, safari, opera, chrome */
+    filter: alpha(opacity=50); /* internet explorer */
+    opacity: 0.5;           /* fx, safari, opera, chrome */
 }
 .inside ul.adr {
-padding-left:20px;
-margin: 0px;
-*display:inline; /* hack for ie */
+    padding-left:20px;
+    margin: 0px;
+    *display:inline; /* hack for ie */
 }
 .inside ul.adr li.url-field {
-padding-right:5px;
-display:inline;
+    padding-right:5px;
+    display:inline;
 }
 .inside li.email {
-clear:both;
+    clear:both;
 }
 .inside li.tel  {
-background:transparent url(img/telephone.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/telephone.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside li.tel-fax  {
-background:transparent url(img/telephone.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/telephone.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside li.website  {
-background:transparent url(img/world_go.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/world_go.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside .website span.type {
-display:none;
+    display:none;
 }
 .inside li.social-yahoo  {
-background:transparent url(img/yahoo.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/yahoo.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside li.social-msn  {
-background:transparent url(img/msn.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/msn.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside li.social-aim  {
-background:transparent url(img/aim.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/aim.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside li.social-gtalk  {
-background:transparent url(img/gtalk.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/gtalk.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside li.social-twitter  {
-background:transparent url(img/twitter.png) no-repeat scroll left center;
-padding-left:20px
+    background:transparent url(img/twitter.png) no-repeat scroll left center;
+    padding-left:20px
 }
 .inside .social-twitter span.type {
-display:none;
+    display:none;
 }
