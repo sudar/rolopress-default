@@ -4,7 +4,7 @@ Theme URI: http://rolopress.com
 Description: A Contact Manager built on WordPress
 Author: <a href="http://slipfire.com/">SlipFire</a> &amp; <a href="http://sudarmuthu.com/">Sudar Muthu</a>
 Author URI: 
-Version: 1.4
+Version: 1.5
 Tags: contact-manager, crm
 Template: rolopress-core
 
@@ -95,7 +95,6 @@ a:hover {
     margin:5px 0 0;
 }
 
-
 #menu .menu-item a {
     padding:10px 15px 0 0;
 }
@@ -107,7 +106,6 @@ a:hover {
     text-decoration: none;
     color: white;
 }
-
 
 /* =navigation
 -------------------------------------------------------------- */
@@ -587,4 +585,13 @@ ol.notelist li .comment-reply-link a {
 }
 .inside .social-twitter span.type {
     display:none;
+}
+.inside li.tags {
+    background:transparent url(img/tags.png) no-repeat scroll left top;
+    padding-left:20px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+.inside .tags li {
+    display: inline;
 }
